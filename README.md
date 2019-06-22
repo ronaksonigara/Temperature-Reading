@@ -1,8 +1,9 @@
 # Temperature-Reading
 
-An app which take file input of temperature readin and and based on readin it will show the line chart of 1 year reading per month.
+An app which take file input of temperature readings and based on that readings it will show the line chart of 1 year data reading.
+Chart is divided into months and shows the aggregate temperature reading for that particular month.
 
-##Technologies Used
+## Technologies Used
 
 * Frond End
   - React Js
@@ -12,12 +13,12 @@ An app which take file input of temperature readin and and based on readin it wi
  * BackEnd
   - Node Js
   
-  ##packages Used
-    * Express
-    * Chart.js
-    * body-parser
+## packages Used
+  * Express
+  * Chart.js
+  * body-parser
 
-# Installation
+## Installation
   - Clone the repository to your local.
   - run npm install in project main folder `Temperature-Reading`.
   - In browser open [localhost:3000](localhost:3000).
