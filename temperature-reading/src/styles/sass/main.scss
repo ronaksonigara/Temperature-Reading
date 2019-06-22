@@ -8,8 +8,6 @@ body {
   @include vendor-prefix('transform', 'translate(-50%, -50%)');
   display: inline-block;
   padding: 20px;
-  height: 50%;
-  width: 100%;
   border: 1px solid #000;
   overflow: hidden;
   position: relative;
@@ -41,4 +39,48 @@ body {
   cursor: pointer;
   border: 1px solid #000;
   margin-top: 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+
+  &.modal--active {
+    display: block;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .8);
+}
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  // background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+background: url('../../images/cross-icon.svg') no-repeat center #fff;
+background-size: 15px 15px;
+
+}
+
+.modal-body {
+  @include vendor-prefix('transform', 'translate(-50%, -50%)');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  padding: 20px;
+  background-color: #fff;
 }
