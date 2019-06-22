@@ -24,3 +24,6 @@ An app which take file input of temperature readin and and based on readin it wi
   
  - FronEnd will be hosted on port `3000`.
  - Server will be hosted on port `5000`.
+
+## To Run the project
+  - run command  `npm run dev` at main folder `Temperature-Reading`.
