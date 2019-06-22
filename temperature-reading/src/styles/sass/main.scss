@@ -1,3 +1,86 @@
+@import './mixins/vendor-prefix';
+
 body {
-  color: green;
+  background-color: #efefef
+}
+
+.form__container {
+  @include vendor-prefix('transform', 'translate(-50%, -50%)');
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #000;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.input__label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.input__field {
+  display: block;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+.subimt__btn {
+  display: block;
+  width: 100%;
+  padding: 10px 45px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #000;
+  margin-top: 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+
+  &.modal--active {
+    display: block;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .8);
+}
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  // background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+background: url('../../images/cross-icon.svg') no-repeat center #fff;
+background-size: 15px 15px;
+
+}
+
+.modal-body {
+  @include vendor-prefix('transform', 'translate(-50%, -50%)');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  padding: 20px;
+  background-color: #fff;
 }

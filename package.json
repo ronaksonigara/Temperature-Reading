@@ -1,0 +1,30 @@
+{
+  "name": "temperature-reading",
+  "version": "1.0.0",
+  "description": "Temperatur Reading App",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "client-install": "npm install --prefix temperature-reading",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix temperature-reading",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaksonigara/Temperature-Reading.git"
+  },
+  "author": "Ronak Sonigara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaksonigara/Temperature-Reading/issues"
+  },
+  "homepage": "https://github.com/ronaksonigara/Temperature-Reading#readme"
+}
