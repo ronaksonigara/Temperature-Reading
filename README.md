@@ -10,7 +10,7 @@ Chart is divided into months and shows the aggregate temperature reading for tha
   - Sass
   - Gulp Js
   
- * BackEnd
+* Server Side
   - Node Js
   
 ## packages Used
