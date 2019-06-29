@@ -1,13 +1,22 @@
 const express = require("express");
 const router = express.Router();
 
+//Load Reading model
+const Reading = require("../models/Reading");
+
 router.post("/", (req, res) => {
   let graphX = [], graphY = [];
   let data = req.body;
   let start = data[0].ts;
 
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
-
+  Reading.collection.insertMany(data, function (err, docs) {
+    if (err) {
+      return console.error(err);
+    } else {
+      console.log('inserted');
+    }
+  });
   let tempArray = [];
   let j = 0, i = 0;
   while (j < 12) {
