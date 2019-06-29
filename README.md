@@ -12,7 +12,6 @@ Chart is divided into months and shows the aggregate temperature reading for tha
   
 * Server Side
   - Node Js
-  - Express Js
   - Mongoose (mongodb)
 
 ## packages Used

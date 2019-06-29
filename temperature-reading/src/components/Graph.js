@@ -20,7 +20,7 @@ class Graph extends React.Component {
       dataX,
       dataY
     } = this.props;
-    var myChart = new Chart(ctx, {
+    new Chart(ctx, {
       type: 'line',
       data: {
         labels: dataX,
